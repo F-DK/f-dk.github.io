@@ -637,15 +637,38 @@ a.icon__linkedin:active {
 }
 
 .logo-tile__image {
+  /* max-width: 100%; */
+  /* height: auto; */
+  margin-bottom: 16px;
+}
+
+.logo-tile__image--high {
   /* max-width: 100%;
   height: auto; */
-  /* padding-bottom: 16px; */
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .logo-tile__image-fill {  
   fill: #566775;;
   fill: hsla(207, 15%, 40%, 1);
+}
+
+.logo-svg__background {
+  fill: #566775;;
+  fill: hsla(207, 15%, 40%, 1);
+}
+
+.logo-svg__background-gradient {
+  fill: #566775;;
+  fill: hsla(207, 15%, 40%, 1);
+}
+
+.logo-svg__foreground-inverted {
+  fill: #fff;
+}
+
+.logo-svg__foreground {
+  fill: #fff;
 }
 
 .list__clients--secondary {
