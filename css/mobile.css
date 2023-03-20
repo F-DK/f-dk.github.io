@@ -281,7 +281,7 @@ section:last-of-type {
 /* .section__about {} */
 
 .article-intro {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   line-height: 1.5;
   font-weight: 400;
   color: #414d57;
@@ -303,8 +303,12 @@ section:last-of-type {
   font-weight: 700;
 }
 
+.article-intro del {
+  opacity: .6;
+}
+
 .article-intro a {
-  display: inline-block;
+  display: inline;
   margin: 0 0 0.0625rem 0;
   background-image: none;
   text-decoration: none;
