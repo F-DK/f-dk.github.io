@@ -162,7 +162,7 @@ ins {
   background-color: hsla(78, 100%, 50%, 0.2);
   display: inline-block;
   border-radius: 5px;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .text-highlight {
