@@ -804,19 +804,15 @@ a.icon__linkedin:active {
 
   a {
     color: #60839f;
-    color: hsla(207, 70%, 70%, 1);
+    color: hsla(207, 35%, 50%, 1);
 
     text-decoration: none;
     background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
   }
   
   a:hover {
-    color:hsl(207, 70%, 72%)
-    background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.6) 50%,rgba(0,0,0,0) 50%)
-  
-  ul linear-gradient(to bottom,rgba(10, 111, 194, 0.6) 50%,rgba(0,0,0,0) 50%)
-    color: #c4ccd3;
-    color: hsla(207, 15%, 80%, 1);
+    color: hsla(207, 70%, 70%, 1);
+    background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.6) 50%,rgba(0,0,0,0) 50%);
   }
 
   ul a {
