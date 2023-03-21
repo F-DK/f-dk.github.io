@@ -315,7 +315,7 @@ section:last-of-type {
   background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
   background-repeat: repeat-x;
   background-size: 100% .125rem;
-  background-position: 0 2.125rem;
+  background-position: 0 2rem;
 
   transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -809,14 +809,12 @@ a.icon__linkedin:active {
     text-decoration: none;
     background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
   }
-
+  
   a:hover {
-    color: hsla(207, 40%, 52%, 1);
-    color: paleturquoise;
-    background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
-  }
-
-  ul {
+    color:hsl(207, 70%, 72%)
+    background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.6) 50%,rgba(0,0,0,0) 50%)
+  
+  ul linear-gradient(to bottom,rgba(10, 111, 194, 0.6) 50%,rgba(0,0,0,0) 50%)
     color: #c4ccd3;
     color: hsla(207, 15%, 80%, 1);
   }
