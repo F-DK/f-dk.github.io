@@ -810,6 +810,12 @@ a.icon__linkedin:active {
     background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
   }
 
+  a:hover {
+    color: hsla(207, 40%, 52%, 1);
+    color: paleturquoise;
+    background-image: linear-gradient(to bottom,rgba(10, 111, 194, 0.4) 50%,rgba(0,0,0,0) 50%);
+  }
+
   ul {
     color: #c4ccd3;
     color: hsla(207, 15%, 80%, 1);
