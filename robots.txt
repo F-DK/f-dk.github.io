@@ -1,5 +1,7 @@
 User-Agent: *
 Disallow: /norobots/
+Disallow: /download/
+Disallow: /_test/
 
 User-agent: ia_archiver
 Disallow: /
