@@ -1,5 +1,4 @@
 User-Agent: *
-Disallow: /norobots/
 Disallow: /download/
 Disallow: /_test/
 
