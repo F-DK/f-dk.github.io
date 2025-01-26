@@ -48,14 +48,10 @@
       'ad_storage': 'denied'
     });
 
-    // Ensure Google Analytics is configured after the page has fully loaded
-    window.onload = function() {
-      gtag('config', 'G-WY0ZV05JCV', {
-        'anonymize_ip': true,
-        'language': 'en',
-        'region': 'EU'
-      });
-    }
+    // Google Analytics configuration
+    gtag('config', 'G-WY0ZV05JCV', {
+      'anonymize_ip': true
+    });
   </script>
 
 </head>
