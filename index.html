@@ -42,7 +42,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
 
-    // Disable analytics and ad storage cookies by default
+    // Disable analytics and ad storage cookies by default (GDPR-compliant)
     gtag('consent', 'default', {
       'analytics_storage': 'denied',
       'ad_storage': 'denied'
@@ -50,26 +50,33 @@
 
     // Google Analytics configuration
     gtag('config', 'G-WY0ZV05JCV', {
-      'anonymize_ip': true
+      'anonymize_ip': true,  // Anonymize IP for GDPR compliance
+      'language': 'en',      // Set preferred language
+      'region': 'EU'         // Define region as EU for GDPR relevance
     });
+
+    // Optionally: Update consent based on user's actions (if consent is granted later)
+    // gtag('consent', 'update', {
+    //   'analytics_storage': 'granted',
+    //   'ad_storage': 'granted'
+    // });
   </script>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WD26QSHC');</script>
+    })(window,document,'script','dataLayer','GTM-WD26QSHC');</script> -->
   <!-- End Google Tag Manager -->
 
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD26QSHC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD26QSHC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
   <!-- End Google Tag Manager (noscript) -->
-
+  
   <header id="start" class="header section">
     <div class="wrapper">
       <h1 class="title">
