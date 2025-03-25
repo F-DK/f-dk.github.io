@@ -113,15 +113,17 @@ html {
 /* -------- Document -------- */
 
 body {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   min-width: 240px;
-
-  color: hsl(207 15% 30%);
+  
   font-family: var(--font-fam-sans);
   font-size: var(--font-size-lg);
   line-height: 1.6;
-  box-sizing: border-box;
+  text-wrap: balance;
+
+  color: hsl(207 15% 30%);
   /* background-color: hsl(0 0% 100%);
   background-color: hsl(218 35% 81%);
   background-color: hsl(218 35% 85%); */
@@ -359,7 +361,6 @@ section:last-of-type {
 }
 
 .title__name {
-  color: #414d57;
   color: hsl(207 15% 30%);
   color: hsl(207 1% 3%);
   display: block;
@@ -367,12 +368,13 @@ section:last-of-type {
 
 .title__job {
   display: block;
-  color: hsla(207, 15%, 60%, 1);
+  color: hsl(207 15% 30%);
+  color: hsl(207 15% 60%);
 }
 
 .section__list {
   padding: 16px 0 30px 0;
-  background-color: hsl(180, 11%, 96%);
+  background-color: hsl(180 11% 96%);
 }
 
 /* .section__list:first-child {
@@ -908,15 +910,14 @@ a.icon__linkedin:active {
     text-wrap: balance;
   }
 
-  main {
-    /* background-color: hsl(180 11% 5%); */
+  /* main {
+    background-color: hsl(180 11% 5%);
 
-    /* Background animation */
-    /* background: linear-gradient(-45deg, hsl(17 85% 63%), hsl(333 80% 57%), hsl(200 71% 49%), hsl(101 62% 55%));
+    background: linear-gradient(-45deg, hsl(17 85% 63%), hsl(333 80% 57%), hsl(200 71% 49%), hsl(101 62% 55%));
     background-size: 400% 400%;
     position: relative;
-    animation: change 6s ease-in-out infinite; */
-  }
+    animation: change 6s ease-in-out infinite;
+  } */
 
   a {
     /* color: hsl(207 15% 80%);
