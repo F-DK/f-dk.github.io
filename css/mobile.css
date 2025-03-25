@@ -213,14 +213,13 @@ a {
   -o-transform: translateY(0);
 }
 
-a:hover {
-  color: #5489b6;
-  color: hsla(207, 40%, 52%, 1);
-  background-image: linear-gradient(to bottom,rgba(90, 165, 226, .6) 50%,rgba(0,0,0,0) 50%);
-  transform: translateY(-1px);
-  -webkit-transform: translateY(-1px);
-  -moz-transform: translateY(-1px);
-  -o-transform: translateY(-1px);
+a:hover, .article-intro a:hover {
+  color: hsl(207 40% 52%);
+  /* background-image: linear-gradient(to bottom, hsl(207 70% 62% / 0.6) 50%, hsl(0 0% 0% / 0) 50%); */
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
 }
 
 p {
