@@ -1,4 +1,5 @@
-/* Medium Devices 768px and up */
+/* -------- Medium Devices 768px and up -------- */
+
 @media (min-width: 768px) {
   .wrapper {
     margin: 0 48px 0 48px;
@@ -79,7 +80,9 @@
     right: 48px;
   }
 
-  /* DARK MODE SETTINGS */
+
+
+  /* -------- DARK MODE SETTINGS -------- */
 
   @media (prefers-color-scheme: dark) {
     :root {
