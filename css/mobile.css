@@ -128,9 +128,9 @@ body {
   background-color: hsl(218 11% 92%);
 }
 
-main {
-  /* background-color: hsl(0 0% 100%);
-  background-color: hsl(218 35% 85%); */
+/* main {
+  background-color: hsl(0 0% 100%);
+  background-color: hsl(218 35% 85%);
   width: 100%;
 }
 
@@ -397,7 +397,6 @@ section:last-of-type {
 
 .header, .section__about, .section__about--intro {
   position: relative;
-  background-color: hsl(218 35% 85%);
 }
 
 }
