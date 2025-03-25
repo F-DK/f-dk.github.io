@@ -13,16 +13,24 @@
   }
 
   .article-intro {
-    font-size: 2.375rem;
+    font-size: var(--font-size-5xl);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .article-intro__heading {
+    font-size: var(--font-size-hero-4xl);
+    line-height: 1.05;
+    letter-spacing: -1px;
   }
 
   .article-intro a {
-    background-position: 0 2.875rem;
+    /* background-position: 0 2.875rem;
 
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
-    -o-transform: translateY(0);
+    -o-transform: translateY(0); */
   }
 
   .article-paragraph {
@@ -35,12 +43,27 @@
     margin-bottom: -8px;
   }
 
+  .emoji {
+    font-size: var(--font-size-3xl);
+    vertical-align: var(--sm);
+  }
+
+  .two-columns {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
   .section__contact {
     padding: 24px 0 80px 0;
   }
+ 
+  .text-emphasised {
+    border-radius: var(--md);
+    padding: 0 1rem;
+  }
 
   .button {
-    font-size: 1.125rem;
+    font-size: var(--font-size-lg);
     min-width: 56px;
     min-height: 56px;
   }
