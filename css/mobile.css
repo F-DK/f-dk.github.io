@@ -979,10 +979,9 @@ a.icon__linkedin:active {
     color: hsl(207 15% 80% / 1);
     color: hsl(255 15% 84% / 1);
     background-color: hsl(180 11% 5%);
+    background-color: hsl(245 15% 25%);
     background-color: hsl(245 15% 14%);
     background-color: hsl(215 15% 14%);
-    /* background-color: hsl(245 15% 25%); */
-    text-wrap: balance;
   }
 
   /* main {
