@@ -125,9 +125,12 @@ body {
 
   color: hsl(207 15% 30%);
   /* background-color: hsl(0 0% 100%);
+  /* background-color: hsl(218 11% 92%); */
   background-color: hsl(218 35% 81%);
-  background-color: hsl(218 35% 85%); */
-  background-color: hsl(218 11% 92%);
+  background-color: hsl(218 35% 85%);
+  /* background-color: hsl(78 100% 69.2% / 0.8); */
+  /* background-color: hsl(93 100% 69% ); */
+  background-color: hsl(88 100% 69%);
 }
 
 /* main {
@@ -301,7 +304,10 @@ ins {
   margin-left: -4px;
   margin-right: -4px;
   position: absolute;
-  background: hsl(78 100% 69.2% / 0.8);
+  background: hsl(78 100% 69% / 0.8);
+  background: hsl(93 100% 69% / 0.8);
+  background: hsl(88 100% 69% / 0.8);
+  /* mix-blend-mode: hard-light; */
   transform: rotate(-2deg);
   top: 2px;
   left: 2px;
