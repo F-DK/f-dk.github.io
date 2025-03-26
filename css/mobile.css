@@ -26,35 +26,22 @@ html {
 :root {
 
   /* Typography Styles */
-  /* --font-fam-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
-  */
+  
   /* --font-fam-mono: "Source Code Pro", "Courier New", Courier, monospace; */
 
   --font-fam-mono: "Courier Prime Sans", "Courier New", Courier, monospace;
  
-  /*--font-fam-mono: Geist Mono, "Courier New", Courier, monospace;
-  */
-  /* --font-fam-mono: "DM Mono", "Courier New", Courier, monospace;
-  */
-  /* --font-fam-mono: SF Mono, "Courier New", Courier, monospace;
-  */
-  /* --font-fam-mono: Space Mono, "Courier New", Courier, monospace;
-  */
+  /*--font-fam-mono: Geist Mono, "Courier New", Courier, monospace; */
+  /* --font-fam-mono: "DM Mono", "Courier New", Courier, monospace; */
+  /* --font-fam-mono: SF Mono, "Courier New", Courier, monospace; */
+  /* --font-fam-mono: Space Mono, "Courier New", Courier, monospace; */
 
   --font-fam-sans: Geist, "Helvetica Neue", Helvetica, sans-serif;
 
-    
-  /* --font-fam-sans: Inter, "Helvetica Neue", Helvetica, sans-serif;
-  */
-    
-  /* --font-fam-sans: IBM Plex Sans, "Helvetica Neue", Helvetica, sans-serif;
-  */
-
-  /* --font-fam-sans: Satoshi, "Helvetica Neue", Helvetica, sans-serif;
-  */
-
-  /* --font-fam-sans: DM Sans, "Helvetica Neue", Helvetica, sans-serif;
-  */
+  /* --font-fam-sans: Inter, "Helvetica Neue", Helvetica, sans-serif; */
+  /* --font-fam-sans: IBM Plex Sans, "Helvetica Neue", Helvetica, sans-serif; */
+  /* --font-fam-sans: Satoshi, "Helvetica Neue", Helvetica, sans-serif; */
+  /* --font-fam-sans: DM Sans, "Helvetica Neue", Helvetica, sans-serif; */
 
   /* Font sizes */
   --font-size-xs: 0.75rem;
@@ -87,6 +74,7 @@ html {
   --font-weight-bold: 700;
 
   /* Gneric sizes · spacing */
+  --2xs: 0.125rem;
   --xs: 0.25rem;
   --xs-1: 0.375rem;
   --sm: 0.5rem;
