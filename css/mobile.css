@@ -974,6 +974,10 @@ a.icon__linkedin:active {
   display: block;
 }
 
+.footer__item .small-icon {
+  font-size: var(--font-size-md);
+}
+
 
 
 /* -------- SETTINGS - DARK MODE -------- */
