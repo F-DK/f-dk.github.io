@@ -196,7 +196,7 @@ body {
 
 a {
   color: hsl(207 25% 45%);
-  text-decoration: underline;
+  text-decoration: none;
 
   /* background-image: linear-gradient(to bottom, hsl(207 90% 40% / 0.4) 50%, hsl(0 0% 0% / 0) 50%);
   background-repeat: repeat-x;
@@ -485,6 +485,7 @@ section:last-of-type {
 .article-intro a {
   display: inline;
   font-weight: var(--font-weight-bold);
+  text-decoration: underline;
   /* margin: 0 0 0.0625rem 0;
   background-image: none;
   background-image: linear-gradient(to bottom,hsl(207 90% 40% / 0.4) 50%,hsl(0 0% 0% / 0) 50%);
