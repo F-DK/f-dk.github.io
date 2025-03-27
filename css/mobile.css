@@ -699,7 +699,7 @@ body:has(.megahover:hover) {
   -moz-transition-property: transform;
   -o-transition-property: transform;
   
-  /* transition-duration: 0.33s;
+  transition-duration: 0.33s;
   -webkit-transition-duration: 0.33s;
   -moz-transition-duration: 0.33s;
   -o-transition-duration: 0.33s;
@@ -711,7 +711,7 @@ body:has(.megahover:hover) {
   transition-delay: initial;
   -webkit-transition-delay: initial;
   -moz-transition-delay: initial;
-  -o-transition-delay: initial; */
+  -o-transition-delay: initial;
 }
 
 a.button:hover {
@@ -1068,6 +1068,7 @@ a.icon__linkedin:active {
   margin: 0;
   font-family: var(--font-fam-sans);
   font-size: var(--font-size-sm);
+  letter-spacing: 0.8px;
   color: hsl(0 0% 50%);
   color: hsl(218 15% 30%);
   color: hsl(218 15% 50% / 1);
