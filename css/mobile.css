@@ -533,7 +533,8 @@ body:has(.megahover:hover) {
 .article-intro a {
   display: inline;
   font-weight: var(--font-weight-bold);
-  text-decoration: underline;
+  text-decoration: underline dotted;
+
   /* margin: 0 0 0.0625rem 0;
   background-image: none;
   background-image: linear-gradient(to bottom,hsl(218 90% 40% / 0.4) 50%,hsl(0 0% 0% / 0) 50%);
@@ -602,7 +603,9 @@ body:has(.megahover:hover) {
 }
 
 .article-paragraph a {
-  text-decoration: underline;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline dotted;
+  padding: 0 var(--2xs);
   background-position: 0 1.4375rem;
 
   transform: translateY(0);
