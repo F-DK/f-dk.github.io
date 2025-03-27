@@ -1141,6 +1141,22 @@ a.icon__linkedin:active {
     color: hsl(73 100% 50%);
   }
 
+  .article-intro.article-intro__heading a:hover {
+    color: hsl(93 100% 39%);
+  }
+  
+  body:has(.megahover:hover) {
+    /* background-color: hsl(93 100% 59%); */
+    width: 100%;
+  
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #64D348);
+    background-size: 400% 400%;
+    position:  relative;
+    animation: change 6s ease-in-out infinite;
+    mix-blend-mode: multiply;
+  }
+
   .button__email {
     background-color: hsl(218 90% 40%);
     border: 1px solid hsl(218 90% 40%);
