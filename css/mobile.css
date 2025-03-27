@@ -869,7 +869,7 @@ a.icon__linkedin:active {
   display: grid;
   /* display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 100%; */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -900,9 +900,11 @@ a.icon__linkedin:active {
 }
 
 .logo-tile__item {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 100%; */
+  grid-column: 1;
+  grid-row: 1;
   min-height: 72px;
   justify-content: flex-end;
   align-items: center;
@@ -1195,9 +1197,10 @@ a.icon__linkedin:active {
     box-shadow: 0 0 0 1px hsl(218, 15%, 15%);
   }
 
-  /* .logo-tile__image {} */
-
-  /* .logo-tile__image {} */
+  .logo-tile:hover {
+    background-color: hsl(218 20% 5%);
+    mix-blend-mode: lighten;
+  }
 
   .logo-tile__image-fill {
     fill: hsl(218 15% 80% / 1);
