@@ -435,8 +435,14 @@ section:last-of-type {
 /* .section__list:first-child {
   border-top: 2px solid #ebeff0;
   border-top: 2px solid hsl(218 15% 93%);
-} */
-
+  } */
+  
+.wrapper.section__list--highlight {
+  background-color: hsl(218 30% 91% / 1);
+  border-radius: 8px;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+  
 .section-header {
   margin: 16px 0 16px 0;
   font-family: var(--font-fam-mono);
