@@ -116,8 +116,8 @@
   /* -------- DARK MODE SETTINGS -------- */
 
   @media (prefers-color-scheme: dark) {
-    :root {
-    }
+    /* :root {
+    } */
 
     .logo-tile:nth-child(odd) {
       border-right: none;
