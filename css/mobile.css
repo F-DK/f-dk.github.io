@@ -28,20 +28,9 @@ html {
   /* Typography Styles */
   
   /* --font-fam-mono: "Source Code Pro", "Courier New", Courier, monospace; */
-
-  --font-fam-mono: "Courier Prime Sans", "Courier New", Courier, monospace;
- 
-  /*--font-fam-mono: Geist Mono, "Courier New", Courier, monospace; */
-  /* --font-fam-mono: "DM Mono", "Courier New", Courier, monospace; */
-  /* --font-fam-mono: SF Mono, "Courier New", Courier, monospace; */
-  /* --font-fam-mono: Space Mono, "Courier New", Courier, monospace; */
-
-  --font-fam-sans: Geist, "Helvetica Neue", Helvetica, sans-serif;
-
-  /* --font-fam-sans: Inter, "Helvetica Neue", Helvetica, sans-serif; */
-  /* --font-fam-sans: IBM Plex Sans, "Helvetica Neue", Helvetica, sans-serif; */
-  /* --font-fam-sans: Satoshi, "Helvetica Neue", Helvetica, sans-serif; */
-  /* --font-fam-sans: DM Sans, "Helvetica Neue", Helvetica, sans-serif; */
+  --font-fam-mono: "IBM Plex Mono", "Courier New", Courier, monospace;
+  --font-fam--dispaly: Geist, "Helvetica Neue", Helvetica, sans-serif;
+  --font-fam-sans: IBM Plex Sans, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Font sizes */
   --font-size-xs: 0.75rem;
