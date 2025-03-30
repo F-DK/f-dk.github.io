@@ -85,18 +85,18 @@ html {
   --spring-duration: 1.122s;  
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1, 1);
   }
   15% {
-    transform: scale(0.99, 0.99); 
+    transform: scale(0.97, 0.97);
   }
   50% {
     transform: scale(1.01, 1.01);
   }
   65% {
-    transform: scale(0.99, 0.99);
+    transform: scale(0.97, 0.97);
   }
   100% {
     transform: scale(1, 1);
@@ -119,7 +119,7 @@ html {
   100% {
     -webkit-transform: scale(1, 1);
   }
-}
+} */
 
 
 
