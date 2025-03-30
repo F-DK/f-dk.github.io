@@ -22,14 +22,13 @@
     letter-spacing: -1px;
   }
 
-  .article-intro a {
-    /* background-position: 0 2.875rem;
+  /* .article-intro a {
+    background-position: 0 2.875rem;
 
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -o-transform: translateY(0); */
-  }
 
   .article-paragraph {
     background-position: 0 2.375rem;
@@ -103,19 +102,11 @@
     margin-right: -444px;
   }
 
-  .footer__items {
-    /* padding: 24px 0 32px 0 !imporant; */
-    padding-top: 24px !imporant;
-    padding-bottom: 32px !imporant;
-  }
-
 
 
   /* -------- DARK MODE SETTINGS -------- */
 
   @media (prefers-color-scheme: dark) {
-    /* :root {
-    } */
 
     .logo-tile:nth-child(odd) {
       border-right: none;
