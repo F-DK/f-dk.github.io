@@ -1248,6 +1248,10 @@ a.icon__linkedin:active {
     background-color: hsl(218 20% 9%);
   }
 
+  .wrapper.section__list--highlight {
+    background-color: hsl(218 30% 15% / 1);
+  }
+
   .section__clients {
     border-top: 1.5px solid hsl(218 15% 16%);
   }
