@@ -1239,6 +1239,10 @@ a.icon__linkedin:active {
   .section-header {
     color: hsl(218 15% 40%);
   }
+
+  .section-header a {
+    color: hsl(218 15% 60%);
+  }
   
   .section-header__sub {
     color: hsl(218 15% 40%);
