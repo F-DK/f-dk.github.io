@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 html {
@@ -350,15 +351,6 @@ ins {
 
 
 /* -------- ELEMENTS AND COMPONENTS -------- */
-
-#toplink {
-  /* opacity: 0; */
-
-  /* animation-name: fadeInOut;
-  -webkit-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s; */
-}
 
 /* .section__list a {
   text-shadow: -1px -1px 0 #ebeff0, 1px -1px 0 #ebeff0, -1px 1px 0 #ebeff0, 1px 1px 0 #ebeff0;
