@@ -30,8 +30,8 @@ html {
   
   /* --font-fam-mono: "Source Code Pro", "Courier New", Courier, monospace; */
   --font-fam-mono: "IBM Plex Mono", "Courier New", Courier, monospace;
-  --font-fam--dispaly: Geist, "Helvetica Neue", Helvetica, sans-serif;
   --font-fam-sans: IBM Plex Sans, "Helvetica Neue", Helvetica, sans-serif;
+  --font-fam--display: Geist, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Font sizes */
   --font-size-xs: 0.75rem;
