@@ -172,6 +172,25 @@ body {
   }
 } */
 
+code {
+  font-family: var(--font-fam-mono);
+  letter-spacing: -4px;
+  /* font-size: var(--font-size-sm); */
+  /* font-weight: var(--font-weight-normal); */
+  /* color: hsl(218 15% 20%);
+  background-color: hsl(218 15% 96%);
+  padding: var(--sm) var(--sm-1); */
+}
+
+mark {
+  /* background-color: hsl(78 100% 69%); */
+  background-color: hsl(52 100% 50% / 0.4);
+  background-color: oklch(0.89 0.18 97.02);
+  background-color: oklch(0.88 0.21 93.52 / 0.4);
+  background-color: hsl(78 100% 69% / 0.5);
+  color: hsl(218 150% 15%);
+}
+
 .text-italic {
   font-style: italic;
 }
