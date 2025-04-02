@@ -12,12 +12,14 @@
 
   .article-intro {
     font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-extralight);
     line-height: 1.2;
     letter-spacing: -0.5px;
   }
 
-  .article-intro__heading {
+  .article-intro.article-intro__heading {
     font-size: var(--font-size-hero-4xl);
+    font-weight: var(--font-weight-bold);
     line-height: 1.05;
     letter-spacing: -1px;
   }
@@ -28,7 +30,8 @@
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
-    -o-transform: translateY(0); */
+    -o-transform: translateY(0);
+  } */
 
   .article-paragraph {
     background-position: 0 2.375rem;
