@@ -440,7 +440,7 @@ section:last-of-type {
 .wrapper.section__list--highlight {
   background-color: hsl(218 30% 91% / 1);
   border-radius: 8px;
-  padding: 1rem 1.5rem 2rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
 }
   
 .section-header {
@@ -999,22 +999,26 @@ a.icon__linkedin:active {
   fill: hsl(0 0% 100%);
 }
 
-.list__clients--secondary {
-  margin: 8px 0;
+.list--secondary {
+  margin: var(--sm) 0 var(--lg) 0;
   list-style: none;
   padding: 0;
   font-family: var(--font-fam-sans);
   font-weight: var(--font-weight-light);
   letter-spacing: 0.4px;
 
-  padding-left: var(--sm-1);
   border-left: 4px solid #ebf0f0;
   border-left: 4px solid hsl(218 17% 90%);
 }
 
+.list__border-left {
+  border-left: 4px solid hsl(218 17% 90%);
+  padding: 0 0 0 var(--md);
+}
+
 /* .list__clients {} */
 
-/* .list__clients--secondary {} */
+/* .list--secondary {} */
 
 .top-link {
   display: block;
@@ -1142,9 +1146,9 @@ a.icon__linkedin:active {
     font-weight: var(--font-weight-medium);
     color: hsl(218 15% 80%);
     text-decoration: underline;
-    text-decoration-color: hsl(73 100% 50% / 0.6);
-    text-decoration-thickness: 0.5px;
-    text-underline-offset: 4.5px;
+    text-decoration-color: hsl(73 100% 50% / 0.3);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5.5px;
   }
 
   .text-highlight {
@@ -1321,7 +1325,11 @@ a.icon__linkedin:active {
 
   .logo-netbreeze__initial {} */
 
-  .list__clients--secondary  {
+  .list--secondary  {
+    border-left: 4px solid hsl(218 17% 15%);
+  }
+
+  .list__border-left {
     border-left: 4px solid hsl(218 17% 15%);
   }
 
