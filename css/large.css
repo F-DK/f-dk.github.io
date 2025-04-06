@@ -23,15 +23,16 @@
     line-height: 1.05;
     letter-spacing: -1px;
   }
+  
+  .article-intro.article-intro__heading a {
+    /* text-decoration-thickness: 4.5px;
+    text-underline-offset: 12.5px; */
+  }
 
-  /* .article-intro a {
-    background-position: 0 2.875rem;
-
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-  } */
+  .article-intro a {
+    text-decoration-thickness: 3.5px;
+    text-underline-offset: 8.5px;
+  }
 
   .article-paragraph {
     background-position: 0 2.375rem;

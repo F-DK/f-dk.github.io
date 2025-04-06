@@ -21,15 +21,15 @@
     padding-bottom: var(--xl);
   }
 
-  /* .article-intro a {
-    background-size: 100% 0.25rem;
-    background-position: 0 2.438rem;
+  .article-intro a {
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 6.5px;
+  }
 
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-  } */
+  .article-intro.article-intro__heading a {
+    text-decoration-thickness: 4.5px;
+    text-underline-offset: 8.5px;
+  }
 
   .article-paragraph {
     font-size: var(--font-size-xl);
