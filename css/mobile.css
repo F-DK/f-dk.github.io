@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 html {
@@ -184,14 +185,14 @@ ins {
 
 /* ELEMENTS AND COMPONENTS */
 
-#toplink {
-  /* opacity: 0; */
+/* #toplink {
+  opacity: 0;
 
-  /* animation-name: fadeInOut;
+  animation-name: fadeInOut;
   -webkit-animation-duration: 1s;
   -o-animation-duration: 1s;
-  animation-duration: 1s; */
-}
+  animation-duration: 1s;
+} */
 
 /* .section__list a {
   text-shadow: -1px -1px 0 #ebeff0, 1px -1px 0 #ebeff0, -1px 1px 0 #ebeff0, 1px 1px 0 #ebeff0;
@@ -604,7 +605,7 @@ a.icon__linkedin:active {
   /* border: 4px solid hsla(300, 100%, 50%, 0.2); */
 }
 
-.block-grid--gapless {}
+/* .block-grid--gapless {} */
 
 .logo-tile {
   padding: 32px;
@@ -785,8 +786,6 @@ a.icon__linkedin:active {
 /* -- DARK MODE SETTINGS -- */
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  }
 
   /* BASE -- DARK MODE */
 

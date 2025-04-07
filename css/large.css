@@ -80,15 +80,13 @@
 
   .footer__items {
     /* padding: 24px 0 32px 0 !imporant; */
-    padding-top: 24px !imporant;
-    padding-bottom: 32px !imporant;
+    padding-top: 24px !important;
+    padding-bottom: 32px !important;
   }
 
   /* DARK MODE SETTINGS */
 
   @media (prefers-color-scheme: dark) {
-    :root {
-    }
 
     .logo-tile:nth-child(odd) {
       border-right: none;
