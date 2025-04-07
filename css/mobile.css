@@ -199,7 +199,7 @@ mark {
   background-color: oklch(0.89 0.18 97.02);
   background-color: oklch(0.88 0.21 93.52 / 0.4);
   background-color: hsl(78 100% 69% / 0.5);
-  color: hsl(218 15% 15%)
+  color: hsl(218 15% 15%);
   padding: 0 var(--sm);
 }
 
