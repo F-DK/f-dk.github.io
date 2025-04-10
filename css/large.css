@@ -18,8 +18,7 @@
   }
 
   .article-intro.article-intro__heading {
-    font-size: var(--font-size-hero-4xl);
-    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-hero-5xl);
     line-height: 1.05;
     letter-spacing: -1px;
   }
