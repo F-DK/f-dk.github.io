@@ -26,7 +26,33 @@ html {
 
 :root {
 
-  /* Colors */
+  /* Color Primitives */
+
+  /* Colors - Green */
+  --color-primary-50: oklch(98.60% 0.0310 122.61);
+  --color-primary-100: oklch(97.41% 0.0746 123.17);
+  --color-primary-200: oklch(95.20% 0.1424 125.17);
+  --color-primary-300: oklch(92.49% 0.2251 128.32);
+  --color-primary-400: oklch(88.10% 0.2788 130.70);
+  --color-primary-500: oklch(80.16% 0.2645 132.88); /* Background light */
+  --color-primary-600: oklch(67.48% 0.2257 133.67);
+  --color-primary-700: oklch(55.20% 0.1774 133.44);
+  --color-primary-800: oklch(46.63% 0.1376 132.78);
+  --color-primary-900: oklch(41.17% 0.1078 132.91);
+  --color-primary-950: oklch(27.40% 0.0720 133.96);
+
+  /* Colors - Grey */
+  --color-grey-50: oklch(98.40% 0.0030 255.13);
+  --color-grey-100: oklch(95.10% 0.0064 255.17);
+  --color-grey-200: oklch(89.51% 0.0119 262.78);
+  --color-grey-300: oklch(81.81% 0.0203 260.17);
+  --color-grey-400: oklch(66.04% 0.0385 264.06);
+  --color-grey-500: oklch(51.76% 0.0448 264.69);
+  --color-grey-600: oklch(41.69% 0.0420 264.56);
+  --color-grey-700: oklch(35.02% 0.0433 264.56);
+  --color-grey-800: oklch(26.45% 0.0405 267.31); /* Background dark */
+  --color-grey-900: oklch(20.07% 0.0418 273.03);
+  --color-grey-950: oklch(12.90% 0.0420 271.97);
 
   /* Colors light mode*/
   --color-text-primary: hsl(218 15% 30%);
