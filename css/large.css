@@ -25,8 +25,8 @@
   }
   
   .article-intro.article-intro__heading a {
-    /* text-decoration-thickness: 4.5px;
-    text-underline-offset: 12.5px; */
+    text-decoration-thickness: 5.5px;
+    text-underline-offset: 11.5px;
   }
 
   .article-intro a {
