@@ -85,7 +85,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .logo-tile:nth-child(odd) {
+  /* .logo-tile:nth-child(odd) {
     border-right: none;
   }
 
@@ -97,7 +97,7 @@
   .logo-tile:nth-child(3n + 2) {
     border-right: 1px solid #e1e9e9;
     border-right: 1px solid hsl(180, 17%, 90%);
-  }
+  } */
 
   .top-link {
     bottom: 64px;
@@ -109,20 +109,5 @@
 
   /* -------- DARK MODE SETTINGS -------- */
 
-  @media (prefers-color-scheme: dark) {
-
-    .logo-tile:nth-child(odd) {
-      border-right: none;
-    }
-
-    .logo-tile:nth-child(3n + 1) {
-      border-right: 1px solid #212a2a;
-      border-right: 1px solid hsl(180, 12%, 15%);
-    }
-
-    .logo-tile:nth-child(3n + 2) {
-      border-right: 1px solid #212a2a;
-      border-right: 1px solid hsl(180, 12%, 15%);
-    }
-  }
+  @media (prefers-color-scheme: dark) {}
 }
