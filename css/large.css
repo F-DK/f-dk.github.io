@@ -100,9 +100,18 @@
   } */
 
   .top-link {
-    bottom: 64px;
-    right: 50%;
-    margin-right: -444px;
+    position: absolute;
+    right: -8px;
+  }
+
+  .wrapper--top-link {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1680px;
+    min-width: 888px;
+    height: 100vh;
   }
 
 
