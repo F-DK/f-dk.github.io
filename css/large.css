@@ -102,6 +102,7 @@
   .top-link {
     position: absolute;
     right: -8px;
+    pointer-events: all;
   }
 
   .wrapper--top-link {
@@ -112,6 +113,7 @@
     max-width: 1680px;
     min-width: 888px;
     height: 100vh;
+    pointer-events: none;
   }
 
 
