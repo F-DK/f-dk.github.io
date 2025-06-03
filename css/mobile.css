@@ -273,7 +273,7 @@ body:has(.megahover) {
   font-family: var(--font-fam-sans);
   font-size: var(--font-size-lg);
   line-height: 1.6;
-  text-wrap: balance;
+  text-wrap-style: pretty;
   color: var(--color-base);
   background-color: var(--background-base);
   /* animation-delay: 0.5s; */
