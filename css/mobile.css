@@ -1023,6 +1023,10 @@ a.icon__linkedin:active {
     color: var(--dark-text-xstark);
   }
 
+  .text-caption--centered--link {
+    color: rgba(var(--color-coolgrey-300-rgb), 0.6);
+  }
+
 
 
   /* -------- ELEMENTS AND COMPONENTS - DARK MODE -------- */
