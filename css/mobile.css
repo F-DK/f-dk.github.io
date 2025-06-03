@@ -843,6 +843,7 @@ a.icon__linkedin:active {
 }
 
 .logo-tile__item {
+  padding: var(--xl);
   grid-column: 1;
   grid-row: 1;
   min-height: 72px;
@@ -859,7 +860,6 @@ a.icon__linkedin:active {
 }
 
 .logo-tile__image-fill {  
-  fill: hsl(218 15% 40% / 1);
 }
 
 .logo-svg__background {
@@ -1135,8 +1135,19 @@ a.icon__linkedin:active {
   }
 
   .logo-tile__image-fill {
-    fill: hsl(218 15% 80% / 1);
-    fill: hsl(218 15% 100% / 1);
+    fill: var(--color-coolgrey-300);
+  }
+
+  .logo-tile__image-fill--stark {
+    fill: var(--color-coolgrey-100);
+  }
+
+  .logo-tile__image-fill--inverted {
+    fill: var(--color-coolgrey-800);
+  }
+
+  .logo-tile__image--hellomeet {
+    stop-color: var(--color-coolgrey-50);
   }
 
   .logo-svg__background {
