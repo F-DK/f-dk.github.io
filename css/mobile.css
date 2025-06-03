@@ -814,9 +814,9 @@ a.icon__linkedin:active {
 }
 
 .logo-tile {
-  padding: var(--xl);
+  padding: 0;
   display: grid;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   text-align: center;
   box-shadow:0 0 0 1px var(--color-coolgrey-300);
@@ -831,6 +831,10 @@ a.icon__linkedin:active {
 .logo-tile a {
   background-image: none;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .logo-tile:last-child {
@@ -861,6 +865,19 @@ a.icon__linkedin:active {
 }
 
 .logo-tile__image-fill {  
+  fill: var(--color-coolgrey-500);
+}
+
+.logo-tile__image-fill--stark {  
+  fill: var(--color-coolgrey-600);
+}
+
+.logo-tile__image-fill--inverted {
+  fill: var(--color-coolgrey-50);
+}
+
+.logo-tile__image--hellomeet {
+  stop-color: var(--color-coolgrey-500);
 }
 
 .logo-svg__background {
