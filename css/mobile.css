@@ -458,8 +458,9 @@ section:last-of-type {
 .section-header {
   margin: 16px 0 16px 0;
   font-family: var(--font-fam-mono);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
+  line-height: 1.4;
   letter-spacing: 0.8px;
   color: var(--text-500);
   mix-blend-mode: luminosity;
@@ -473,11 +474,8 @@ section:last-of-type {
 
 .section-header__sub {
   margin: 16px 0 8px 0;
-  font-family: var(--font-fam-mono);
   font-weight: var(--font-weight-normal);
-  line-height: 1.4;
   color: var(--text-400);
-  mix-blend-mode: luminosity;
 }
 
 .header, .section__about, .section__about--intro {
