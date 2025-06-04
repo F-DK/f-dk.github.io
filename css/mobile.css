@@ -508,7 +508,8 @@ section:last-of-type {
 .article-intro a {
   display: inline-block;
   font-weight: var(--font-weight-extrabold);
-  text-decoration: underline 2.5px;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
   text-underline-offset: 0.1em;
   text-decoration-color: var(--text-underline-bright);
   text-shadow: 0 0 0 transparent;
@@ -583,9 +584,9 @@ section:last-of-type {
 .article-paragraph a {
   font-weight: var(--font-weight-semibold);
   text-decoration: underline;
-  text-decoration-color: var(--text-underline-bright);
   text-decoration-thickness: 2.5px;
   text-underline-offset: 0.15em;
+  text-decoration-color: var(--text-underline-bright);
   padding: 0 var(--2xs);
   transition: all 800ms var(--spring-easing-bounce);
 }
