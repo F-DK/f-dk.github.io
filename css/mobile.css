@@ -452,8 +452,7 @@ section:last-of-type {
 .wrapper.section__list--highlight {
   border-radius: var(--sm);
   padding: 1rem 1.5rem 1rem 1.5rem;
-  background-color: var(--color-coolgrey-200);
-  background-color: rgba(var(--color-coolgrey-300-rgb), 0.25);
+  background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-300-rgb), 0.25), rgba(var(--color-coolgrey-300-rgb), 0));
 }
 
 .section-header {
@@ -1148,11 +1147,7 @@ a.icon__linkedin:active {
   }
 
   .wrapper.section__list--highlight {
-    background-color: var(--dark-background-base);
-  }
-
-  .list--secondary  {
-    border-left: 4px solid var(--color-coolgrey-800);
+    background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-500-rgb), 0.15), rgba(var(--color-coolgrey-500-rgb), 0));
   }
 
   .section__list--highlight .list--secondary {
