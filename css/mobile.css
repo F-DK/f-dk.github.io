@@ -42,7 +42,9 @@ html {
   --color-greenyellow-600: oklch(67.48% 0.2257 133.67);
   --color-greenyellow-700: oklch(55.20% 0.1774 133.44);
   --color-greenyellow-800: oklch(46.63% 0.1376 132.78);
+  --color-greenyellow-800-rgb: 57, 105, 0;
   --color-greenyellow-900: oklch(41.17% 0.1078 132.91);
+  --color-greenyellow-900-rgb: 50, 86, 12;
   --color-greenyellow-950: oklch(27.40% 0.0720 133.96);
 
   /* -- Colors - Coolgrey -- */
@@ -81,10 +83,11 @@ html {
   --text-500: var(--color-coolgrey-500);
   --text-400: var(--color-coolgrey-400);
   --text-300: var(--color-coolgrey-300);
+  --text-200: var(--color-coolgrey-200);
+  --text-100: var(--color-coolgrey-100);
   --text-underline-bright: var(--color-greenyellow-300);
   --text-underline: var(--color-greenyellow-500);
   --text-highlight: var(--color-white);
-  --text-mark: 237, 255, 200; /* var(--color-greenyellow-100); */
   --text-mark-bright: var(--color-greenyellow-300-rgb);
   --text-mark: var(--color-greenyellow-500-rgb);
   --background-base: var(--color-coolgrey-300);
@@ -174,7 +177,9 @@ html {
   
   --spring-easing-bounce-1: linear(0, 0.0027, 0.0106, 0.0233, 0.0405 1.62%, 0.0921 2.51%, 0.1663 3.46%, 0.3306 5.16%, 0.6897 8.4%, 0.829 9.73%, 0.9572 11.09%, 1.0604, 1.1436 13.67%, 1.1765 14.3%, 1.2059 14.96%, 1.2287 15.59%, 1.2476, 1.2613, 1.2702 17.58%, 1.2749 18.39%, 1.2732 19.24%, 1.2651 20.12%, 1.25, 1.2297 22.04%, 1.2033 23.07%, 1.0577 27.93%, 1.023 29.22%, 0.9952 30.4%, 0.9679 31.8%, 0.9478, 0.9341 34.53%, 0.9263 35.97%, 0.9245, 0.9247 37.74%, 0.9312 39.65%, 0.9443 41.68%, 0.9837 46.47%, 1.0006 48.86%, 1.0137, 1.02 54.24%, 1.0208 56.12%, 1.019 58.19%, 1.0001 67.29%, 0.9947 72.37%, 0.9948 76.8%, 1.0012 89.47%, 1.0007 99.98%);
 
-  --scale-active: scale(0.998) translateY(1px);  
+  --scale-active: scale(0.998) translateY(1px);
+  --scale-active--elevated: scale(0.98) translateY(3px);
+  --scale-active--tile: scale(0.96) translateY(3px);
 
   --spring-duration: 1.122s;
   --spring-duration: 1.328s;
@@ -319,6 +324,10 @@ mark {
 .text-small a:hover {
   background-color: var(--color-greenyellow-300);
   text-decoration-color: transparent;
+}
+
+.text-small a:active {
+  transform: var(--scale-active);
 }
 
 .text-light {
@@ -620,10 +629,7 @@ section:last-of-type {
   min-height: 48px;
   background-image: none;
   cursor: pointer;
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -o-transform: translateY(0);
+  transition: all 800ms var(--spring-easing-bounce);
 }
 
 a.button:hover {
@@ -636,10 +642,10 @@ a.button:hover {
 }
 
 a.button:active {
-  transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  -moz-transform: translateY(1px);
-  -o-transform: translateY(1px);
+  transform: var(--scale-active);
+  -webkit-transform: var(--scale-active);
+  -moz-transform: var(--scale-active);
+  -o-transform: var(--scale-active);
 }
 
 a.button:focus {
@@ -945,10 +951,7 @@ a.icon__linkedin:active {
   box-shadow: 0 9px 16px -5px hsl(0 0% 42% / 0.2), 0 5px 6px -2px hsl(0 0% 42% / 0.3);
   background-image: none;
 
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -o-transform: translateY(0);
+  transition: all 800ms var(--spring-easing-bounce);
 }
 
 .top-link:hover .top-link__icon {
@@ -963,6 +966,13 @@ a.icon__linkedin:active {
   background-image: none;
   box-shadow: 0 10px 24px -6px hsl(0 0% 42% / 0.4), 0 6px 14px -3px hsl(0 0% 42% / 0.5);
   background-color: var(--color-coolgrey-50);
+}
+
+.top-link:active {
+  transform: var(--scale-active--elevated);
+  -webkit-transform: var(--scale-active--elevated);
+  -moz-transform: var(--scale-active--elevated);
+  -o-transform: var(--scale-active--elevated);
 }
 
 .top-link__icon {
