@@ -804,6 +804,10 @@ a.icon__linkedin:active {
 .section__clients {
   padding-top: var(--space-md);
 }
+  
+.section__clients .section-header__sub {
+  padding: var(--space-md) 0 var(--space-lg) 0;
+}
 
 /* .section__services {} */
 
