@@ -15,10 +15,10 @@
     line-height: 1.25;
   }
 
-  .article-intro.article-intro__heading {
+  .article-intro.article-intro__heading { 
     font-size: var(--font-size-hero-lg);
     line-height: 1.1;
-    padding-bottom: var(--xl);
+    /* padding-bottom: var(--space-xl); */
   }
 
   .article-intro a {
