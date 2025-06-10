@@ -545,7 +545,6 @@ section:last-of-type {
   text-decoration-color: var(--color-white);
   
   /* CMYK vintage 3D glasses effect */
-  mix-blend-mode: multiply;
   text-shadow: 0 0 0 rgba(255 255 0 / 0.9), 0.07em 0 0 rgba(255 0 255 / 0.4), -0.07em 0 0 rgba(0 255 255 / 0.5);
 }
 
@@ -558,8 +557,7 @@ section:last-of-type {
 
 .article-intro mark {
   color: var(--color-white);
-  background-color: rgba(var(--color-coolgrey-500-rgb), 0.3);
-  background-color: oklch(0.3224 0.0769 262.18);
+  background-color: oklch(0.5024 0.1926 262.18 / 0.3);
   border-radius: var(--space-xs-1);
 }
 
@@ -1053,6 +1051,7 @@ a.icon__linkedin:active {
   body:has(.megahover) {
     color: var(--dark-text-base);
     background-color: var(--dark-background-base);
+    background-color: var(--color-coolgrey-900);
   }
 
   body:has(.megahover:hover) {
@@ -1182,10 +1181,12 @@ a.icon__linkedin:active {
   
   .section__about {
     background-color: var(--dark-background-base);
+    background-color: rgba(var(--color-coolgrey-500-rgb), 0.2);
   }
   
   .section__contact {
     background-color: var(--dark-background-base);
+    background-color: rgba(var(--color-coolgrey-500-rgb), 0.2);
   }
   
   .section__clients {
