@@ -252,9 +252,10 @@ body:has(.megahover) {
   font-family: var(--font-fam-sans);
   font-size: var(--font-size-lg);
   line-height: 1.6;
+  text-wrap-style: balance;
   text-wrap-style: pretty;
   color: var(--color-base);
-  background-color: var(--background-base);
+  background-color: var(--color-coolgrey-900);
   /* background-color: oklch(92.00% 0.0100 208.00); */
   /* background-color: oklch(90.00% 0.0030 168.00); */
   /* animation-delay: 0.5s; */
@@ -447,7 +448,8 @@ section:last-of-type {
 }
 
 .title__name {
-  color: var(--text-base);
+
+  color: var(--text-100);
   display: block;
 }
 
@@ -498,11 +500,17 @@ section:last-of-type {
   padding-top: var(--space-lg);
 }
 
+.section__about {
+  background-color: var(--color-white);
+  padding-top: var(--space-2xl);
+}
+
 .article-intro {
   font-size: var(--font-size-2xl-1);
   line-height: 1.25;
   font-weight: var(--font-weight-light);
   color: var(--text-base);
+  color: var(--text-100);
   padding: 0 0 var(--space-2xl) 0;
 }
 
@@ -516,7 +524,8 @@ section:last-of-type {
 
 .article-intro a {
   display: inline-block;
-  font-weight: var(--font-weight-extrabold);
+  color: var(--text-100);
+  font-weight: var(--font-weight-semibold);
   text-decoration: underline;
   text-decoration-color: var(--text-underline-bright);
   text-decoration-thickness: 2.5px;
@@ -524,6 +533,11 @@ section:last-of-type {
   text-shadow: 0 0 0 transparent;
   transition: all 800ms var(--spring-easing-bounce);
 }
+
+/* .article-intro > .text-highlight {
+  color: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+} */
 
 .article-intro a:hover {
   background: none;
@@ -540,6 +554,13 @@ section:last-of-type {
   -webkit-transform: var(--scale-active);
   -moz-transform: var(--scale-active);
   -o-transform: var(--scale-active);
+}
+
+.article-intro mark {
+  color: var(--color-white);
+  background-color: rgba(var(--color-coolgrey-500-rgb), 0.3);
+  background-color: oklch(0.3224 0.0769 262.18);
+  border-radius: var(--space-xs-1);
 }
 
 /* .article-intro a:focus {
@@ -565,18 +586,15 @@ section:last-of-type {
   font-weight: var(--font-weight-extrabold);
   line-height: 1.125;
   letter-spacing: -0.4px;
-  color: rgba(var(--color-coolgrey-500-rgb), 0.62);
+  color: rgba(var(--color-coolgrey-300-rgb), 0.62);
+  mix-blend-mode: plus-lighter;
   padding-bottom: var(--space-lg);
 }
 
 .article-intro.article-intro__heading a {
   text-decoration-thickness: 4.5px;
   font-weight: var(--font-weight-extrabold);
-}
-
-.article-intro > .text-highlight {
-  color: var(--text-base);
-  font-weight: var(--font-weight-semibold);
+  color: var(--text-100);
 }
 
 .article-paragraph {
@@ -626,6 +644,7 @@ section:last-of-type {
 
 .section__contact {
   padding: 0 0 var(--space-3xl) 0;
+  background-color: var(--color-white);
 }
 
 .section__contact .section-header {
@@ -803,8 +822,9 @@ a.icon__linkedin:active {
 
 .section__clients {
   padding-top: var(--space-md);
+  border-top: 2px solid rgba(var(--color-coolgrey-300-rgb), 0.2);
 }
-  
+
 .section__clients .section-header__sub {
   padding: var(--space-md) 0 var(--space-lg) 0;
 }
@@ -1013,9 +1033,7 @@ a.icon__linkedin:active {
   margin: 0;
   font-family: var(--font-fam-mono);
   font-size: var(--font-size-sm);
-  color: hsl(0 0% 50%);
-  color: var(--color-coolgrey-700);
-  color: hsl(218 15% 50% / 1);
+  color: var(--color-coolgrey-400);
   display: block;
 }
 
@@ -1097,25 +1115,25 @@ a.icon__linkedin:active {
     color: var(--dark-text-base);
   }
   
+  .article-intro a {
+    color: var(--text-white);
+  }
+
   .article-intro a:hover {
     color: var(--color-greenyellow-200);
     text-shadow: -0.08em 0 rgb(255 0 0 ),  0.08em 0 rgb(0 255 255);
     text-shadow: 0 0 0 rgba(255 255 0 / 0.9), 0.07em 0 0 rgba(255 0 255 / 0.4), -0.07em 0 0 rgba(0 255 255 / 0.5);
     mix-blend-mode: screen;
     color: transparent;
-  }
+  }  
   
   .article-intro.article-intro__heading {
     color: var(--dark-text-300);
-  }
+  }  
 
   .article-intro__heading a:hover {
     color: var(--color-greenyellow-400);
-  }
-
-  .article-intro > .text-highlight {
-    color: var(--text-white);
-  }
+  }  
 
   .article-paragraph a:hover {
     background-color: var(--color-greenyellow-700);
@@ -1161,7 +1179,15 @@ a.icon__linkedin:active {
   .section-header__sub {
     color: var(--dark-text-500);
   }
-
+  
+  .section__about {
+    background-color: var(--dark-background-base);
+  }
+  
+  .section__contact {
+    background-color: var(--dark-background-base);
+  }
+  
   .section__clients {
     border-top: 0.5px solid rgba(var(--color-coolgrey-500-rgb), 0.3);
   }
