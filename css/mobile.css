@@ -316,9 +316,12 @@ mark {
 
 .text-small a {
   text-decoration: underline;
-  text-decoration-color: var(--text-underline);
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--text-underline-bright);
+  text-decoration-thickness: 2.5px;
   text-underline-offset: 0.15em;
+  padding: 0 var(--space-2xs);
+  display: inline-block;
+  transition: all 800ms var(--spring-easing-bounce);
 }
 
 .text-small a:hover {
@@ -355,7 +358,7 @@ a:hover {
 }
 
 p {
-  padding-bottom: var(--sm-1);
+  padding-bottom: 0.75em;
 }
 
 input {
@@ -366,6 +369,10 @@ input {
 }
 
 ul {
+  /* text-decoration: none;
+  list-style-type: none; */
+  /* padding: 0; */
+  margin: 0;
   color: var(--text-700);
 }
 
@@ -404,6 +411,10 @@ ins {
   display: inline-block;
   font-weight: var(--font-weight-medium);
   color: var(--text-base);
+}
+
+.flex-list {
+  display: flex;
 }
 
 
@@ -516,9 +527,9 @@ section:last-of-type {
   display: inline-block;
   font-weight: var(--font-weight-extrabold);
   text-decoration: underline;
+  text-decoration-color: var(--text-underline-bright);
   text-decoration-thickness: 2.5px;
   text-underline-offset: 0.1em;
-  text-decoration-color: var(--text-underline-bright);
   text-shadow: 0 0 0 transparent;
   transition: all 800ms var(--spring-easing-bounce);
 }
@@ -581,7 +592,8 @@ section:last-of-type {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-light);
   line-height: 1.5;
-  padding-bottom: 0.75em;
+  /* padding-bottom: 0.75em; */
+  padding-bottom: 2em;
 }
 
 .article-paragraph strong {
@@ -609,6 +621,10 @@ section:last-of-type {
   -webkit-transform: scale(0.98) translateY(1px);
   -moz-transform: scale(0.98) translateY(1px);
   -o-transform: scale(0.98) translateY(1px);
+}
+
+.article-column {
+  padding-bottom: 0.75em;
 }
 
 .emoji {
@@ -931,7 +947,7 @@ a.icon__linkedin:active {
 }
 
 .list__item--spacing {
-  padding-bottom: var(--sm);
+  padding-bottom: 0.75em
 }
 
 .top-link {
@@ -1050,6 +1066,10 @@ a.icon__linkedin:active {
   ul a {
     color: var(---dark-text-base);
   }
+
+  .text-small a:hover {
+  background-color: var(--color-greenyellow-700);
+}
 
   .text-highlight {
     color: var(--dark-text-xstark);
