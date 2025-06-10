@@ -1119,20 +1119,20 @@ a.icon__linkedin:active {
   }
 
   .article-intro a:hover {
-    color: var(--color-greenyellow-200);
-    text-shadow: -0.08em 0 rgb(255 0 0 ),  0.08em 0 rgb(0 255 255);
+    color: var(--color-greenyellow-300);
+    /* color: rgba(var(--color-greenyellow-300-rgb), 0.8); */
+    /* text-shadow: -0.08em 0 rgb(255 0 0 ),  0.08em 0 rgb(0 255 255); */
     text-shadow: 0 0 0 rgba(255 255 0 / 0.9), 0.07em 0 0 rgba(255 0 255 / 0.4), -0.07em 0 0 rgba(0 255 255 / 0.5);
     mix-blend-mode: screen;
-    color: transparent;
   }  
   
   .article-intro.article-intro__heading {
-    color: var(--dark-text-300);
-  }  
+    color: rgba(var(--color-coolgrey-300-rgb), 0.62);
+  }
 
   .article-intro__heading a:hover {
     color: var(--color-greenyellow-400);
-  }  
+  }
 
   .article-paragraph a:hover {
     background-color: var(--color-greenyellow-700);
