@@ -20,6 +20,7 @@
     font-size: var(--font-size-hero-lg);
     line-height: 1.1;
     /* padding-bottom: var(--space-xl); */
+    padding-bottom: 0.5em;
   }
 
   .article-intro a {

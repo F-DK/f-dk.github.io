@@ -586,7 +586,7 @@ section:last-of-type {
   letter-spacing: -0.4px;
   color: rgba(var(--color-coolgrey-300-rgb), 0.62);
   mix-blend-mode: plus-lighter;
-  padding-bottom: var(--space-lg);
+  padding-bottom: 0.75em;
 }
 
 .article-intro.article-intro__heading a {
