@@ -803,7 +803,7 @@ a.icon__linkedin:active {
 
 .block-grid {
   display: grid;
-  padding: 0 0 var(--3xl) 0;
+  padding: 0 0 var(--space-3xl) 0;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1px;
 }
@@ -820,12 +820,20 @@ a.icon__linkedin:active {
   justify-content: center;
   text-align: center;
   box-shadow:0 0 0 1px var(--color-coolgrey-300);
+  transition: all 800ms var(--spring-easing-bounce);
 }
 
 .logo-tile:hover {
   background-color: rgba(var(--color-coolgrey-300-rgb), 0.1);
   box-shadow:0 0 0 1px rgba(var(--color-coolgrey-500-rgb), 0.3);
   mix-blend-mode: darken;
+}
+
+.logo-tile:active {
+  transform: var(--scale-active--tile);
+  -webkit-transform: var(--scale-active--tile);
+  -moz-transform: var(--scale-active--tile);
+  -o-transform: var(--scale-active--tile);
 }
 
 .logo-tile a {
@@ -844,24 +852,16 @@ a.icon__linkedin:active {
 .logo-tile img {
   max-width: 100%;
   height: auto;
-  padding-bottom: var(--md);
+  padding-bottom: var(--space-md);
 }
 
 .logo-tile__item {
-  padding: var(--xl);
   grid-column: 1;
   grid-row: 1;
+  grid-gap: 1rem;
   min-height: 72px;
   justify-content: flex-end;
   align-items: center;
-}
-
-.logo-tile__image {
-  margin-bottom: 16px;
-}
-
-.logo-tile__image--high {
-  margin-bottom: 8px;
 }
 
 .logo-tile__image-fill {  
@@ -1045,6 +1045,8 @@ a.icon__linkedin:active {
   }
 
   .text-caption--centered--link {
+    font-size: var(--font-size-md);
+    line-height: 1.25;
     color: rgba(var(--color-coolgrey-300-rgb), 0.6);
   }
 
@@ -1163,7 +1165,6 @@ a.icon__linkedin:active {
   }
 
   .logo-tile:hover {
-    background-color: var(--color-coolgrey-900);
     background-color: rgba(var(--color-coolgrey-500-rgb), 0.05);
     mix-blend-mode: lighten;
   }
