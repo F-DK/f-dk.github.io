@@ -87,6 +87,10 @@
     right: 40px;
   }
 
+  .footer__items {
+    padding: 0;
+  }
+
 
 
   /* -------- DARK MODE SETTINGS -------- */
