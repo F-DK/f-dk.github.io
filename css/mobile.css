@@ -476,16 +476,6 @@ section:last-of-type {
   padding-top: var(--space-lg);
 }
 
-/* .section__about--intro:has(.megahover) {
-  padding-top: var(--space-lg);
-  transition: all 1600ms ease;
-} */
-
-/* .section__about--intro:has(.megahover:hover) {
-  background-color: var(--color-greenyellow-700);
-  mix-blend-mode: screen;
-} */
-
 .section__about {
   background-color: var(--color-white);
   padding-top: var(--space-2xl);
