@@ -330,6 +330,10 @@ ins {
   position: relative;
 }
 
+.wrapper--narrow {
+  margin: 0 var(--space-md);
+}
+
 .visually-hidden {
   display: none;
 }
@@ -871,7 +875,7 @@ a.icon__linkedin:active {
 
 .wrapper.section__list--highlight {
   border-radius: var(--space-sm);
-  padding: var(--space-md) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-300-rgb), 0.25), rgba(var(--color-coolgrey-300-rgb), 0));
 }
 

@@ -2,12 +2,16 @@
 
 @media (min-width: 768px) {
   .wrapper {
-    margin: 0 48px 0 48px;
+    margin: 0 var(--space-2xl);
+  }
+
+  .wrapper--narrow {
+    margin: 0 var(--space-xl);
   }
 
   .text-emphasised {
     display: inline-block;
-    border-radius: var(--sm);
+    border-radius: var(--space-sm);
   }
 
   .article-intro {
@@ -19,7 +23,6 @@
   .article-intro.article-intro__heading { 
     font-size: var(--font-size-hero-lg);
     line-height: 1.1;
-    /* padding-bottom: var(--space-xl); */
     padding-bottom: 0.5em;
   }
 
@@ -52,7 +55,7 @@
   }
 
   .section__contact {
-    padding: 16px 0 64px 0;
+    padding: var(--space-md) 0 var(--space-3xl) 0;
   }
   .section-header {
     font-size: var(--font-size-md);
