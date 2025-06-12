@@ -780,36 +780,40 @@ a.icon__linkedin:active {
 }
 
 .logo-tile {
-  padding: 0;
-  display: grid;
-  align-items: end;
-  justify-content: center;
+  padding: var(--space-xl);
   text-align: center;
+  min-height: 72px;
+  line-height: 1.25;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: var(--space-md);
   box-shadow:0 0 0 1px var(--color-coolgrey-300);
   transition: all 800ms var(--spring-easing-bounce);
 }
 
-.logo-tile:hover {
+a.logo-tile:hover {
   background-color: rgba(var(--color-coolgrey-300-rgb), 0.1);
   box-shadow:0 0 0 1px rgba(var(--color-coolgrey-500-rgb), 0.3);
   mix-blend-mode: darken;
 }
 
-.logo-tile:active {
+a.logo-tile:active {
   transform: var(--scale-active--tile);
   -webkit-transform: var(--scale-active--tile);
   -moz-transform: var(--scale-active--tile);
   -o-transform: var(--scale-active--tile);
 }
 
-.logo-tile a {
+/* .logo-tile a {
   background-image: none;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-}
+} */
 
 .logo-tile:last-child {
   border-bottom: none;
@@ -819,16 +823,6 @@ a.icon__linkedin:active {
   max-width: 100%;
   height: auto;
   padding-bottom: var(--space-md);
-}
-
-.logo-tile__item {
-  padding: var(--space-xl);
-  grid-column: var(--space-md);
-  grid-row: 1;
-  grid-gap: 1rem;
-  min-height: 72px;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .logo-tile__image-fill {  
@@ -1126,7 +1120,7 @@ a.icon__linkedin:active {
     box-shadow: 0 0 0 1px var(--color-coolgrey-800);
   }
 
-  .logo-tile:hover {
+  a.logo-tile:hover {
     background-color: rgba(var(--color-coolgrey-500-rgb), 0.05);
     mix-blend-mode: lighten;
   }
