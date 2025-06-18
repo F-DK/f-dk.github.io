@@ -55,7 +55,7 @@ html {
   --color-coolgrey-300: oklch(87.00% 0.0288 257.79); /* Background light */
   --color-coolgrey-300-rgb: 201, 213, 232;
   --color-coolgrey-400: oklch(70.49% 0.0458 261.68);
-  --color-coolgrey-500: oklch(55.47% 0.0509 262.31);
+--color-coolgrey-500: oklch(55.47% 0.0509 262.31);
   --color-coolgrey-500-rgb: 99, 115, 145;
   --color-coolgrey-600: oklch(44.66% 0.0469 262.18);
   --color-coolgrey-700: oklch(37.24% 0.0469 262.18);
@@ -238,7 +238,7 @@ mark {
   padding: 0;
   text-align: center;
   text-decoration-color: transparent;
-  color: rgba(var(--color-coolgrey-500-rgb), 0.75);
+  color: rgba(var(--color-coolgrey-500-rgb), 0.8);
 }
 
 .text-small {
@@ -388,7 +388,6 @@ section:last-of-type {
 .title__job {
   display: block;
   color: var(--text-400);
-  mix-blend-mode: luminosity;
 }
 
 .section__list {
@@ -409,19 +408,17 @@ section:last-of-type {
   line-height: 1.4;
   letter-spacing: 0.8px;
   color: var(--text-500);
-  mix-blend-mode: luminosity;
 }
 
 .section-header a {
   color: var(--text-500);
-  mix-blend-mode: luminosity;
   background: none;
 }
 
 .section-header__sub {
   padding: var(--space-xl) 0 var(--space-md) 0;
   font-weight: var(--font-weight-normal);
-  color: var(--text-400);
+  color: rgba(var(--color-coolgrey-500-rgb), 0.8);
 }
 
 .header, .section__about, .section__about--intro {
@@ -430,6 +427,11 @@ section:last-of-type {
 
 .section__about--intro {
   padding-top: var(--space-lg);
+}
+
+.section__about--intro .section-header {
+  font-weight: var(--font-weight-normal);
+  color: rgba(var(--color-coolgrey-300-rgb), 0.68);
 }
 
 .section__about {
@@ -511,7 +513,7 @@ section:last-of-type {
   font-weight: var(--font-weight-extrabold);
   line-height: 1.125;
   letter-spacing: -0.4px;
-  color: rgba(var(--color-coolgrey-300-rgb), 0.62);
+  color: rgba(var(--color-coolgrey-300-rgb), 0.68);
   mix-blend-mode: plus-lighter;
   padding-bottom: 0.75em;
 }
@@ -573,6 +575,7 @@ section:last-of-type {
 
 .section__contact .section-header {
   padding-bottom: var(--space-md);
+  color: rgba(var(--color-coolgrey-500-rgb), 0.8);
 }
 
 .button {
@@ -873,6 +876,11 @@ a.logo-tile:active {
   background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-300-rgb), 0.25), rgba(var(--color-coolgrey-300-rgb), 0));
 }
 
+.section__list--highlight .section-header,
+.section__list--highlight .section-header__sub {
+  filter: brightness(0.6);
+}
+
 .section__list--highlight .list--secondary {
   padding: var(--space-md);
   border-radius: var(--space-sm);
@@ -969,7 +977,7 @@ a.logo-tile:active {
 
   body {
     color: var(--dark-text-base);
-    background-color: var(--color-coolgrey-900);
+    background-color: var(--color-coolgrey-950);
   }
 
   mark {
@@ -1000,7 +1008,7 @@ a.logo-tile:active {
   .text-caption--centered--link {
     font-size: var(--font-size-md);
     line-height: 1.25;
-    color: rgba(var(--color-coolgrey-300-rgb), 0.6);
+    color: rgba(var(--color-coolgrey-300g), 0.6);
   }
 
 
@@ -1041,6 +1049,10 @@ a.logo-tile:active {
     color: rgba(var(--color-coolgrey-300-rgb), 0.62);
   }
 
+  .article-intro.article-intro__heading a {
+    color: var(--text-200);
+  }
+
   .article-paragraph a:hover {
     background-color: var(--color-greenyellow-700);
   }
@@ -1075,15 +1087,17 @@ a.logo-tile:active {
   }
 
   .section-header {
-    color: rgba(var(--color-coolgrey-300-rgb), 0.6);
+    color: rgba(var(--color-coolgrey-300-rgb), 0.85);
   }
 
   .section-header a {
     color: var(--dark-text-400);
+    color: rgba(var(--color-coolgrey-300-rgb), 0.85);
   }
   
   .section-header__sub {
     color: var(--dark-text-500);
+    color: rgba(var(--color-coolgrey-300-rgb), 0.7);
   }
   
   .section__about {
@@ -1095,6 +1109,10 @@ a.logo-tile:active {
     background-color: var(--dark-background-base);
     background-color: rgba(var(--color-coolgrey-500-rgb), 0.2);
   }
+
+  .section__contact .section-header {
+    color: rgba(var(--color-coolgrey-300-rgb), 0.85);
+  }
   
   .section__clients {
     border-top: 0.5px solid rgba(var(--color-coolgrey-500-rgb), 0.3);
@@ -1105,11 +1123,16 @@ a.logo-tile:active {
   }
 
   .wrapper.section__list--highlight {
-    background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-500-rgb), 0.15), rgba(var(--color-coolgrey-500-rgb), 0));
+    background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-500-rgb), 0.12), rgba(var(--color-coolgrey-500-rgb), 0));
   }
 
   .section__list--highlight .list--secondary {
     background-image: linear-gradient(165deg, rgba(var(--color-coolgrey-500-rgb), 0.15), rgba(var(--color-coolgrey-300-rgb), 0));
+  }
+
+  .section__list--highlight .section-header,
+  .section__list--highlight .section-header__sub {
+    filter: none;
   }
 
   .list__border-left {
