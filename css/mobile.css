@@ -205,7 +205,7 @@ body {
   line-height: 1.6;
   text-wrap-style: balance;
   text-wrap: pretty;
-  color: var(--color-base);
+  color: var(--text-base);
   background-color: var(--color-coolgrey-900);
   transition: all 1600ms ease;
 }
