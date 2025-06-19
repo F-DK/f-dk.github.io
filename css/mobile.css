@@ -55,7 +55,7 @@ html {
   --color-coolgrey-300: oklch(87.00% 0.0288 257.79); /* Background light */
   --color-coolgrey-300-rgb: 201, 213, 232;
   --color-coolgrey-400: oklch(70.49% 0.0458 261.68);
---color-coolgrey-500: oklch(55.47% 0.0509 262.31);
+  --color-coolgrey-500: oklch(55.47% 0.0509 262.31);
   --color-coolgrey-500-rgb: 99, 115, 145;
   --color-coolgrey-600: oklch(44.66% 0.0469 262.18);
   --color-coolgrey-700: oklch(37.24% 0.0469 262.18);
@@ -911,7 +911,7 @@ a.logo-tile:active {
   background-color: var(--color-white);
   border: 1px solid 1px solid var(--color-coolgrey-200);
 
-  box-shadow: 0 9px 16px -5px hsl(0 0% 42% / 0.2), 0 5px 6px -2px hsl(0 0% 42% / 0.3);
+  box-shadow: 0 9px 24px -2px rgba(var(--color-coolgrey-500-rgb), 0.2), 0 5px 6px -1.5px rgba(var(--color-coolgrey-500-rgb), 0.3);
   background-image: none;
 
   transition: all 800ms var(--spring-easing-bounce);
@@ -927,7 +927,7 @@ a.logo-tile:active {
 
 .top-link:hover {
   background-image: none;
-  box-shadow: 0 10px 24px -6px hsl(0 0% 42% / 0.4), 0 6px 14px -3px hsl(0 0% 42% / 0.5);
+  box-shadow: 0 14px 24px -1.5px rgba(var(--color-coolgrey-500-rgb), 0.2), 0 7px 6px -1.5px rgba(var(--color-coolgrey-500-rgb), 0.3);
   background-color: var(--color-coolgrey-50);
 }
 
@@ -936,6 +936,15 @@ a.logo-tile:active {
   -webkit-transform: var(--scale-active--elevated);
   -moz-transform: var(--scale-active--elevated);
   -o-transform: var(--scale-active--elevated);
+  box-shadow: 0 4px 16px -2px rgba(var(--color-coolgrey-500-rgb), 0.2), 0 2px 3px -0.5px rgba(var(--color-coolgrey-500-rgb), 0.35);
+}
+
+.top-link:active .top-link__icon {
+  transform: translateY(0.5px);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
 }
 
 .top-link__icon {
@@ -947,6 +956,7 @@ a.logo-tile:active {
   background-position: center center;
   padding-top: 49px;
   opacity: 0.4;
+  transition: all 800ms var(--spring-easing-bounce);
 }
 
 .footer {
