@@ -1018,7 +1018,7 @@ a.logo-tile:active {
   .text-caption--centered--link {
     font-size: var(--font-size-md);
     line-height: 1.25;
-    color: rgba(var(--color-coolgrey-300g), 0.6);
+    color: rgba(var(--color-coolgrey-300-rgb), 0.6);
   }
 
 
