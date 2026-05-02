@@ -1,0 +1,8 @@
+# PDFs and binary downloads — unreadable by Claude, 74 MB of waste
+download/
+
+# Deprecated/archived assets — not referenced in active code
+img/archive/
+
+# macOS metadata
+.DS_Store
