@@ -1,0 +1,12 @@
+{
+  "autoMode": {
+    "environment": [
+      "### This repo",
+      "**Trusted repo**: /Users/akihiro/code/fukai \u2014 personal portfolio site (fukai.ch), static, no build system.",
+      "**Repository visibility**: PUBLIC \u2014 F-DK/f-dk.github.io (github.com, this repo's origin). Only this repo's own work belongs here: content ported, repointed, or first read from outside this session's repo is not its own work. Secrets and sensitive/personal data never land here regardless of visibility.",
+      "**Default / protected branches**: `main` is the default and protected branch; no rulesets listed.",
+      "**CI/CD deploy targets**: GitHub Pages \u2014 a push to `main` deploys live to fukai.ch. Treat any push to `main` as a production deploy and confirm first.",
+      "**Source control**: origin https://github.com/F-DK/f-dk.github.io.git only."
+    ]
+  }
+}
