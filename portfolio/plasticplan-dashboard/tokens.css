@@ -1,0 +1,150 @@
+/* PlasticPlan Dashboard — design tokens.
+   Single source of truth for all literal design values.
+   app.css / index.html / charts.js consume var(--…) only.
+   Values marked (px) were sampled directly from the Figma render
+   (specs screenshots) and override the build spec where they disagreed. */
+
+:root {
+  /* grey primitives — the two ramps the design names.
+     coolgrey is canonical; neutralgrey arrives via Tailwind-origin components. */
+  --cg-100: #F0F3F5; --cg-200: #E4E8EC; --cg-300: #DCE0E5; --cg-500: #A1A8B3;
+  --ng-400: #9CA3AF;
+  --brand-blue-400: #007EFF;
+
+  /* surface */
+  --surface-app:      var(--cg-100);  /* shell bg */
+  --surface-card:     #FFFFFF;  /* every card */
+  --surface-rail:     #EAEDF0;  /* sidebar */
+  --surface-subtle:   #F9FAFB;  /* table zebra stripe */
+  --surface-selected: #F2F8FF;  /* selected table row */
+  --surface-alert:    #FFF5F5;  /* KPI *Red variant background tint */
+  --surface-tile:     var(--cg-100);  /* (px) "taxable" KPI tiles — spec said #EAEDF0, render says #F0F3F5 */
+
+  /* border */
+  --border-default:   #D4D9DF;  /* card + control stroke; ALSO the shadow color */
+  --border-subtle:    #E5E7EB;  /* table dividers, accumulated-grid rule */
+  --border-field:     #D1D5DB;  /* search field, checkbox (Tailwind-origin) */
+  --border-grid:      #E6E6E6;  /* chart gridlines */
+  --border-selected:  #D0E8FF;  /* rule under the selected table row — tinted, not the grey one */
+  --border-tile:      var(--cg-300);  /* (px) KPI tile stroke */
+
+  /* text */
+  --text-heading:     #000000;  /* H1 only */
+  --text-primary:     #101624;
+  --text-strong:      #111827;  /* table body: Certainty + Status (Tailwind-origin) */
+  --text-body:        #4D4D4D;  /* card titles, section heading */
+  --text-label:       #545D6D;  /* KPI labels, inactive nav */
+  --text-secondary:   #6B7280;
+  --text-muted:       #7C8492;
+  --text-link:        #001F66;  /* table Product ID / Company-Code / Business unit */
+  --text-link-hover:  var(--brand-blue-400);
+  --text-axis:        #A3A3A3;  /* chart axis labels */
+  --text-success:     #0E8F1D;
+  --badge-success-bg:   #D1FAE5;  /* status pill, Certainty column */
+  --badge-success-text: #065F46;
+  --text-alert:       #BD1522;
+  --text-on-bar:      #FFFFFF;  /* value label drawn inside a filled bar */
+
+  /* brand + nav */
+  --brand:            #2E98FF;  /* "PlasticPlan" wordmark */
+  --nav-active-bg:    var(--cg-300);  /* current nav row pill */
+  --nav-hover-bg:     var(--cg-200);  /* nav row + ghost select hover */
+
+  /* icon */
+  --icon-default:     var(--cg-500);
+  --icon-subtle:      #BEC4CC;
+  --icon-nav:         var(--cg-500);  /* sidebar nav + collapse */
+  --icon-header:      var(--ng-400);  /* page-header icon buttons */
+  --icon-info-hover:  var(--cg-500);  /* tile info glyph on hover */
+
+  /* focus */
+  --focus-ring:       #2E98FF;
+  --focus-w:          2px;
+
+  /* type — Inter throughout; Work Sans (2 stray uses) treated as drift, not a token */
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --text-h1:       600 34px/1.2 var(--font-sans);
+  --text-h2:       600 16px/20px var(--font-sans);
+  --text-h3:       500 14px/20px var(--font-sans);
+  --text-lead:     400 16px/24px var(--font-sans);
+  --text-body-md:  500 14px/20px var(--font-sans);
+  --text-body-rg:  400 14px/20px var(--font-sans);
+  --text-sm-md:    500 12px/16px var(--font-sans);
+  --text-sm-rg:    400 12px/16px var(--font-sans);
+  --text-xs-rg:    400 11px/16px var(--font-sans);
+  --text-value:    700 20px/24px var(--font-sans);
+  --text-unit:     400 12px/16px var(--font-sans);
+  --text-grade:    700 16px/20px var(--font-sans);
+  --text-grade-lg: 700 20px/20px var(--font-sans);
+  --text-wordmark: 700 20px/24px var(--font-sans);  /* renders 108.2px wide — the Figma logo box is 109x16 */
+  --tracking-wide: 0.04em;   /* uppercase table headers */
+
+  /* space — 4px scale */
+  --space-2:2px; --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px;
+  --space-20:20px; --space-24:24px; --space-32:32px; --space-40:40px;
+  --space-48:48px; --space-52:52px; --space-72:72px; --space-96:96px;
+  --space-106:106px; /* _wrapper-container padding L/R, extends the scale */
+
+  /* icon sizes */
+  --icon-12: 12px; --icon-16: 16px; --icon-20: 20px; --icon-24: 24px;
+
+  /* radius */
+  --radius-sm: 4px;   /* KPI tiles */
+  --radius-md: 6px;   /* nav rows, fields */
+  --radius-lg: 8px;   /* cards, selects */
+  --radius-pill: 999px;
+
+  /* elevation — shadow/sm-cg300, the only shadow actually applied */
+  --shadow-card: 0 1px 2px var(--border-default);
+
+  /* motion */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+
+  /* chart — structure */
+  --chart-track:  #EEF1F4;  /* stacked remainder ("Others") */
+  --chart-band:   #EEF1F4;  /* (px) band behind each column group — spec said #F5F6F9 */
+  --target-line:  #E5484D;  /* dashed "Target 2025" rule */
+  --chart-font-size: 12px;  /* axis + in-plot labels */
+
+  /* chart — green series (Total plastic packaging) */
+  --series-green-1:#38A833; --series-green-2:#4EB849; --series-green-3:#69C965;
+  /* 2022 forecast tints (px) */
+  --series-green-1-lt:#81C581; --series-green-2-lt:#8ECE8E; --series-green-3-lt:#9ED99F;
+
+  /* chart — blue series (Total packaging) */
+  --series-blue-1:#2E98FF; --series-blue-2:#67B9FF; --series-blue-3:#8AC8FF;
+  --series-blue-4:#ADD8FF; --series-blue-5:#D0E8FF;
+
+  /* chart — A–F grade ramp (Recyclability) */
+  --grade-a:#38A833; --grade-b:#52C24E; --grade-c:#EE8A00;
+  --grade-d:#F25561; --grade-e:#D62D3A; --grade-f:#BD1522;
+  --grade-muted: 0.6;  /* alpha for the de-emphasised ES/IT/DE rows (px) */
+
+  /* chart — LCA letter ramp A–E (px: distinct from the A–F chart ramp) */
+  --lca-a:#38A833; --lca-b:#86B849; --lca-c:#EEC200; --lca-d:#EE8A00; --lca-e:#D62D3A;
+
+  /* layout */
+  --sidebar-w: 256px;
+  --sidebar-w-collapsed: 56px;
+  --content-max: 1366px;
+  --chart-h-lg: 291px;  /* the two stacked column charts */
+  --chart-h-md: 210px;  /* Recyclability + LCA horizontal charts */
+  --row-bar-h: 20px;        /* Recyclability row thickness (px, ref 02) */
+  --row-bar-h-lead: 36px;   /* ...and the emphasised first row (UK) */
+  --tile-w: 230px;      /* Data analytics KPI tile (Figma FIXED 230x72) */
+  --search-w: 320px;    /* Navbars/Search field */
+  --hit-24: 24px;       /* invisible hit target around a 16px glyph */
+  --collapse-btn: 40px; /* square hover area, = the 56px rail minus its 8px padding */
+  --col-check-w: 40px;  /* checkbox column; puts Product ID's text at 63px, per reference/03-table.png */
+  /* Derived, not measured: nav-item padding + icon + gap. Submenu text lands on the
+     nav label exactly, and stays there if any of the three changes. */
+  --nav-submenu-indent: calc(var(--space-12) + var(--icon-24) + var(--space-12));
+}
+
+/* Registered so `grid-template-columns` can transition on collapse toggle. */
+@property --sidebar-w {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 256px;
+}

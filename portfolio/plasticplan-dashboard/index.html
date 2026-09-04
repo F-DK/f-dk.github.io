@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlasticPlan Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<svg hidden aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-home" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></symbol>
+<symbol id="i-chart-pie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/> <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></symbol>
+<symbol id="i-chart-bar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></symbol>
+<symbol id="i-collapse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4L4 20"/><path d="M12 16L8 12 12 8"/><path d="M8 12L20 12"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6L20 6"/><path d="M4 12L20 12"/><path d="M4 18L20 18"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></symbol>
+<symbol id="i-info" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></symbol>
+<symbol id="i-search" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></symbol>
+<symbol id="i-sort" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"/></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+</defs></svg>
+
+<nav class="sidebar" aria-label="Main">
+  <p class="wordmark">P<span class="wordmark-tail">lasticPlan</span></p>
+  <ul class="menu">
+    <li>
+      <a class="nav-item is-current" href="#" aria-current="page">
+        <svg class="nav-icon" aria-hidden="true"><use href="#i-home"></use></svg>
+        <span class="nav-label">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" aria-hidden="true"><use href="#i-chart-pie"></use></svg>
+        <span class="nav-label">Measurement</span>
+      </a>
+      <ul class="submenu">
+        <li><a href="#">Material Data</a></li>
+        <li><a href="#">Supply Chain Flows</a></li>
+        <li><a href="#">Material Data Enhancement</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" aria-hidden="true"><use href="#i-globe"></use></svg>
+        <span class="nav-label">Circularity</span>
+      </a>
+      <ul class="submenu">
+        <li><a href="#">Recyclability</a></li>
+        <li><a href="#">Lifecycle Assessments</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" aria-hidden="true"><use href="#i-chart-bar"></use></svg>
+        <span class="nav-label">Reporting</span>
+      </a>
+      <ul class="submenu">
+        <li><a href="#">Plastic Packaging Tax</a></li>
+        <li><a href="#">Ellen MacArthur</a></li>
+        <li><a href="#">Customized</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="nav-item" href="#">
+        <svg class="nav-icon" aria-hidden="true"><use href="#i-users"></use></svg>
+        <span class="nav-label">Account</span>
+      </a>
+      <ul class="submenu">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Help &amp; FAQs</a></li>
+      </ul>
+    </li>
+  </ul>
+  <button class="collapse-btn" type="button" id="collapse" aria-expanded="true">
+    <svg class="nav-icon" aria-hidden="true"><use href="#i-collapse"></use></svg>
+    <span class="sr-only" id="collapse-label">Collapse navigation</span>
+  </button>
+</nav>
+
+<main class="wrapper">
+<div class="container">
+
+  <header class="page-header">
+    <div class="page-header-top">
+      <button class="icon-btn" type="button">
+        <svg class="icon-24" aria-hidden="true"><use href="#i-bell"></use></svg>
+        <span class="sr-only">Notifications</span>
+      </button>
+      <span class="avatar" aria-hidden="true">TW</span>
+    </div>
+    <div class="page-header-title">
+      <h1>Dashboard</h1>
+      <p class="greeting">Hi Thorsten, nice to have you back.</p>
+    </div>
+  </header>
+
+  <div class="filters">
+    <div class="filter-group">
+      <button class="select is-ghost" type="button">from: --.--<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      <button class="select is-ghost" type="button">BU<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+    </div>
+    <div class="filter-group">
+      <button class="select is-ghost" type="button">Yearly<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      <button class="select is-ghost" type="button"><svg class="icon-20 select-lead" aria-hidden="true"><use href="#i-calendar"></use></svg>from: --.--<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      <button class="select is-ghost" type="button"><svg class="icon-20 select-lead" aria-hidden="true"><use href="#i-calendar"></use></svg>to: --.--<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+    </div>
+  </div>
+
+  <section class="card analytics" aria-labelledby="h-analytics">
+    <h2 class="sr-only" id="h-analytics">Data analytics</h2>
+    <div class="kpi-row">
+      <article class="tile">
+        <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+        <p class="tile-label"><span class="tile-label-strong">Total packaging weight</span></p>
+        <p class="tile-value">430.026 <span class="tile-unit">t</span></p>
+      </article>
+      <article class="tile">
+        <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+        <p class="tile-label"><span class="tile-label-strong">Total plastic packaging weight</span></p>
+        <p class="tile-value">60.961 <span class="tile-unit">t</span></p>
+      </article>
+    </div>
+
+    <div class="grid-2">
+      <article class="chart-box" aria-labelledby="h-plastic">
+        <div class="chart-head">
+          <h3 id="h-plastic">Total plastic packaging</h3>
+          <button class="select" type="button">By recyclability (in %)<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+        </div>
+        <div class="chart-canvas"><canvas id="chart-plastic"></canvas></div>
+        <ul class="legend" id="legend-plastic"></ul>
+      </article>
+
+      <article class="chart-box" aria-labelledby="h-packaging">
+        <div class="chart-head">
+          <h3 id="h-packaging">Total packaging</h3>
+          <button class="select" type="button">By material class  (in %)<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+        </div>
+        <div class="chart-canvas"><canvas id="chart-packaging"></canvas></div>
+        <ul class="legend" id="legend-packaging"></ul>
+      </article>
+    </div>
+  </section>
+
+  <div class="grid-2 grid-2-top">
+    <section class="card chart-box" aria-labelledby="h-recyclability">
+      <div class="chart-head">
+        <h3 id="h-recyclability">Recyclability</h3>
+      </div>
+      <div class="chart-canvas chart-canvas-md"><canvas id="chart-recyclability"></canvas></div>
+      <div class="chart-foot">
+        <ul class="legend legend-start" id="legend-recyclability"></ul>
+        <button class="select is-bare" type="button">Ellen McArthur<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      </div>
+    </section>
+
+    <section class="card chart-box" aria-labelledby="h-lca">
+      <div class="chart-head">
+        <h3 id="h-lca">Lifecycle assessment</h3>
+        <button class="select" type="button">Carbon pollution<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      </div>
+
+      <article class="tile">
+        <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+        <p class="tile-label"><span class="tile-label-strong">Overall LCA rating</span></p>
+        <p class="grades">
+          <span class="grade grade-a">A</span>
+          <span class="grade grade-b is-emphasis">B</span>
+          <span class="grade grade-c">C</span>
+          <span class="grade grade-d">D</span>
+          <span class="grade grade-e">E</span>
+        </p>
+      </article>
+
+      <div class="kpi-row">
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label"><span class="tile-label-strong">Carbon footprint</span></p>
+          <p class="tile-value">330.006 <span class="tile-unit">kg CO2</span></p>
+        </article>
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label"><span class="tile-label-strong">Eco costs</span></p>
+          <p class="tile-value">1.500.512 <span class="tile-unit">€</span></p>
+        </article>
+      </div>
+
+      <div class="chart-canvas chart-canvas-md"><canvas id="chart-lca"></canvas></div>
+      <div class="chart-foot chart-foot-end">
+        <button class="select is-bare" type="button"><span class="select-prefix">Standard:</span> EU PEF<svg class="icon-20 select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg></button>
+      </div>
+    </section>
+  </div>
+
+  <section class="card table-card" aria-labelledby="h-table">
+    <div class="table-head">
+      <div>
+        <h2 id="h-table">Packaging data enhancement</h2>
+        <p class="table-subtitle">Material Master Data improved by 5% since last months · only 20% left to close!</p>
+      </div>
+      <div class="search">
+        <svg class="icon-20 search-icon" aria-hidden="true"><use href="#i-search"></use></svg>
+        <label class="sr-only" for="product-search">Search for Product-ID</label>
+        <input id="product-search" type="search" placeholder="Search for Product-ID">
+      </div>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <colgroup>
+          <col>  <!-- no width: the six below claim 100%, so this one falls to its
+                     min-content = 16px box + 16/8 padding = 40px. Giving it a width
+                     too over-constrains the table and scales every column up. -->
+          <col style="width:10.5%"><col style="width:12.6%">
+          <col style="width:17.4%"><col style="width:9.5%"><col style="width:16.8%">
+          <col style="width:33.2%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="col-check"><span class="sr-only">Select row</span></th>
+            <th scope="col">PRODUCT ID<svg class="icon-12 sort" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+            <th scope="col">Company-Code<svg class="icon-12 sort" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+            <th scope="col">Business unit<svg class="icon-12 sort" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+            <th scope="col" aria-sort="descending">Certainty<svg class="icon-12 sort is-sorted" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+            <th scope="col">Issue<svg class="icon-12 sort" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+            <th scope="col">Status<svg class="icon-12 sort" aria-hidden="true"><use href="#i-sort"></use></svg></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="is-selected">
+            <td class="col-check"><input type="checkbox" id="r1" checked><label class="sr-only" for="r1">Select LXV-3201</label></td>
+            <td class="cell-link">LXV-3201</td>
+            <td class="cell-link">HGSC, AAAA</td>
+            <td class="cell-link">Adhesive Technologies</td>
+            <td><span class="badge">Active</span></td>
+            <td class="cell-muted">Complete master data</td>
+            <td class="cell-strong">→ Approved by Henkel Expert</td>
+          </tr>
+          <tr>
+            <td class="col-check"><input type="checkbox" id="r2"><label class="sr-only" for="r2">Select LXV-3202</label></td>
+            <td class="cell-link">LXV-3202</td>
+            <td class="cell-link">HGSC, AAAA</td>
+            <td class="cell-link">Adhesive Technologies</td>
+            <td><span class="badge">Active</span></td>
+            <td class="cell-muted">Complete master data</td>
+            <td class="cell-strong">→ Approved by Henkel Expert</td>
+          </tr>
+          <tr>
+            <td class="col-check"><input type="checkbox" id="r3"><label class="sr-only" for="r3">Select LXV-3203</label></td>
+            <td class="cell-link">LXV-3203</td>
+            <td class="cell-link">HGSC, AAAA</td>
+            <td class="cell-link">Adhesive Technologies</td>
+            <td><span class="badge">Active</span></td>
+            <td class="cell-muted">Missing data</td>
+            <td class="cell-strong">→ Request information</td>
+          </tr>
+          <tr>
+            <td class="col-check"><input type="checkbox" id="r4"><label class="sr-only" for="r4">Select LXV-3204</label></td>
+            <td class="cell-link">LXV-3204</td>
+            <td class="cell-link">HGSC, AAAA</td>
+            <td class="cell-link">Adhesive Technologies</td>
+            <td><span class="badge">Active</span></td>
+            <td class="cell-muted">Inconsistent data</td>
+            <td class="cell-strong">→ Master data to SAP</td>
+          </tr>
+          <tr>
+            <td class="col-check"><input type="checkbox" id="r5"><label class="sr-only" for="r5">Select LXV-3205</label></td>
+            <td class="cell-link">LXV-3205</td>
+            <td class="cell-link">HGSC, AAAA</td>
+            <td class="cell-link">Adhesive Technologies</td>
+            <td><span class="badge">Active</span></td>
+            <td class="cell-muted">Inconsistent data</td>
+            <td class="cell-strong">→ Master data to SAP</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-foot">
+      <a class="see-all" href="#">See all 52 entries<svg class="icon-20" aria-hidden="true"><use href="#i-chevron-right"></use></svg></a>
+    </div>
+  </section>
+
+  <section class="accumulated" aria-labelledby="h-accumulated">
+    <h2 id="h-accumulated">Accumulated Packaging Weight &amp; Taxation</h2>
+    <div class="card acc-card">
+      <div class="acc-grid">
+        <article class="tile is-taxable">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Chargeable PPC<br><span class="tile-label-strong">Manufactured</span></p>
+          <p class="tile-value">26.164 <span class="tile-unit">kg</span></p>
+        </article>
+        <article class="tile is-taxable">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Finished PPC<br><span class="tile-label-strong">Imported</span></p>
+          <p class="tile-value">38.164 <span class="tile-unit">kg</span></p>
+        </article>
+        <article class="tile is-taxable">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Chargeable PPC<br><span class="tile-label-strong">Exported</span></p>
+          <p class="tile-value">18.564 <span class="tile-unit">kg</span></p>
+        </article>
+        <div class="acc-empty" aria-hidden="true"></div>
+
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Finished PPC<br><span class="tile-label-strong">Not Subject to Tax</span></p>
+          <p class="tile-value">5.764 <span class="tile-unit">kg</span></p>
+        </article>
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Finished PPC<br><span class="tile-label-strong">Medicine Use</span></p>
+          <p class="tile-value tile-value-empty">-</p>
+        </article>
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Finished PPC<br><span class="tile-label-strong">Recycled ≥30%</span></p>
+          <p class="tile-value">1.670 <span class="tile-unit">kg</span></p>
+        </article>
+        <article class="tile">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Taxed PPC<br><span class="tile-label-strong">Credit Claimed</span></p>
+          <p class="tile-value">-8.200,00 <span class="tile-unit">£</span></p>
+        </article>
+
+        <hr class="acc-rule">
+
+        <article class="tile is-plain">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">PPC:<br><span class="tile-label-strong">Subject to Tax after Deduction</span></p>
+          <p class="tile-value">82.992 <span class="tile-unit">kg</span></p>
+        </article>
+        <article class="tile is-plain">
+          <svg class="tile-info" aria-hidden="true"><use href="#i-info"></use></svg>
+          <p class="tile-label">Tax Due<br><span class="tile-label-strong">&nbsp;</span></p>
+          <p class="tile-value">16.677.200,- <span class="tile-unit">£</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
