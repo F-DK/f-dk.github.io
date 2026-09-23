@@ -372,7 +372,7 @@ section:last-of-type {
 }
 
 .title {
-  padding: var(--space-lg) 0 var(--space-xl) 0;
+  padding: var(--space-lg) 0 var(--space-2xl) 0;
   font-family: var(--font-fam-mono);
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
