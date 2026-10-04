@@ -352,17 +352,6 @@ ins {
 
 /* -------- ELEMENTS AND COMPONENTS -------- */
 
-/* .header:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 8px;
-  background-color: hsl(48 100% 50%);
-  background-color: hsl(218 15% 92%);
-  border-bottom: 1px solid hsl(180 14% 89%);
-} */
-
 section {
   min-height: 110px;
 }
@@ -394,11 +383,6 @@ section:last-of-type {
   padding: var(--space-md) 0 var(--space-xl) 0;
   background-color: var(--color-coolgrey-100);
 }
-
-/* .section__list:first-child {
-  border-top: 2px solid #ebeff0;
-  border-top: 2px solid var(--color-coolgrey-200);
-} */
 
 .section-header {
   padding-top: var(--space-md);
@@ -489,14 +473,6 @@ section:last-of-type {
   background-color: oklch(0.5024 0.1926 262.18 / 0.3);
   border-radius: var(--space-xs-1);
 }
-
-/* .article-intro a:focus {
-  transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  -moz-transform: translateY(1px);
-  -o-transform: translateY(1px);
-  box-shadow: inset 0 0 0 1px hsl(218 30% 30% / 0.1), 0 1px 8px -2px var(--button-email) / 0.2);
-} */
 
 .article-intro__icon {
   width: 24px;
@@ -756,15 +732,9 @@ a.icon__linkedin:active {
   padding: var(--space-md) 0 var(--space-lg) 0;
 }
 
-/* .section__services {} */
-
-/* .section__means {} */
-
 .section__industries .section-header {
   padding-bottom: var(--space-md);
 }
-
-/* .section__products {} */
 
 .list__clients {
   list-style: none;
@@ -809,15 +779,6 @@ a.logo-tile:active {
   -moz-transform: var(--scale-active--tile);
   -o-transform: var(--scale-active--tile);
 }
-
-/* .logo-tile a {
-  background-image: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-} */
 
 .logo-tile:last-child {
   border-bottom: none;
@@ -1025,11 +986,6 @@ a.logo-tile:active {
 
 
   /* -------- ELEMENTS AND COMPONENTS - DARK MODE -------- */
-
-  /* .header:before {
-    background-color: hsl(218 15% 12%);
-    border-bottom: 1px solid hsl(180 14% 14%);
-  } */
 
   .title__name {
     color: var(--dark-text-base);
