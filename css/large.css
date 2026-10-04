@@ -104,10 +104,4 @@
     height: 100vh;
     pointer-events: none;
   }
-
-
-
-  /* -------- DARK MODE SETTINGS -------- */
-
-  @media (prefers-color-scheme: dark) {}
 }

@@ -73,10 +73,4 @@
   .footer__items {
     padding: 0;
   }
-
-
-
-  /* -------- DARK MODE SETTINGS -------- */
-
-  @media (prefers-color-scheme: dark) {}
 }
